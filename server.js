@@ -44,6 +44,12 @@ app.get('/', (req, res)=>{
   })
 })
 
+app.get('/gallery',(req,res)=>{
+  res.render('gallery.hbs', {
+    pageTitle: "Gallery",
+  });
+})
+
 app.get('/about',(req,res)=>{
   res.render('about.hbs', {
     pageTitle: "About Page",
